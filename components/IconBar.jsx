@@ -1,8 +1,13 @@
 import Icon from "./Icon";
 import { config } from "../config";
 import ReactTooltip from 'react-tooltip';
+import { useEffect, useState } from "react";
 
 export default function IconBar() {
+    const [isMounted, setIsMounted] = useState(false)
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
     const icons = config.links.map(
         (icon) => {
             if (icon.type == "url") {
@@ -19,7 +24,7 @@ export default function IconBar() {
                         <a data-tip={icon.text} key={icon.slug}>
                             <Icon icon={icon.slug} />
                         </a>
-                        <ReactTooltip place="top" type="dark" effect="float"/>
+                        {isMounted && <ReactTooltip place="top" type="dark" effect="float"/>}
                     </div>
                 )
             }
