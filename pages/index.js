@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="description" content={config.description} />
         <link rel="icon" href={(process.env.NEXT_PUBLIC_CLOUDIMG_TOKEN) ? `https://${process.env.NEXT_PUBLIC_CLOUDIMG_TOKEN}.cloudimg.io/${config.avatar}?radius=500` : `${config.avatar}`} />
       </Head>
-      <div className="flex flex-col justify-center align-center w-full lg:w-1/2 md:w-1/3 h-1/2">
+      <div className="flex flex-col justify-center align-center w-full lg:w-1/2 md:w-1/3 h-[80%] lg:h-1/2 md:h-1/2 items-center">
         <div className="w-full h-full flex flex-col justify-center items-center">
           <Avatar />
           <h1 className="text-center text-xl font-[600] mt-3" style={{color: `${config.textColor}`}}>{config.name}</h1>
