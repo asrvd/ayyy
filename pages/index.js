@@ -9,6 +9,7 @@ export default function Home() {
       <Head>
         <title>{config.name}</title>
         <meta name="description" content={config.description} />
+        <script async defer data-website-id="4c450443-d56a-4484-b14f-01237f9daef9" src="https://umami-brown-phi.vercel.app/umami.js"></script>
         <link rel="icon" href={(process.env.NEXT_PUBLIC_CLOUDIMG_TOKEN) ? `https://${process.env.NEXT_PUBLIC_CLOUDIMG_TOKEN}.cloudimg.io/${config.avatar}?radius=500` : `${config.avatar}`} />
       </Head>
       <div className="flex flex-col justify-center align-center w-full lg:w-1/2 md:w-1/3 h-[80%] lg:h-1/2 md:h-1/2 items-center">
