@@ -9,7 +9,7 @@ export const config = {
         {
             slug: 'github',
             type: 'url',
-            link: 'https://github.com/asheeeshh/'
+            link: 'https://github.com/asrvd/'
         },
         {
             slug: 'discord',
@@ -24,7 +24,7 @@ export const config = {
         {
             slug: 'instagram',
             type: 'url',
-            link: 'https://instagram.com/_asheeshh'
+            link: 'https://instagram.com/asrvd_'
         },
         {
             slug: 'spotify',
