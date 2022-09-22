@@ -14,7 +14,7 @@ export const config = {
         {
             slug: 'discord',
             type: 'hover',
-            text: 'asheeshh#7727'
+            text: 'asheeshh#4872'
         },
         {
             slug: 'twitter',
